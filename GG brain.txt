@@ -1,0 +1,38 @@
+public class Main
+{
+  public static void main (String[]args)
+  {
+                             // F    D   A   D   B   C   A    F   A   D
+    int[] studentPercentage = { 45, 63, 92, 69, 84, 80, 90, 30, 90, 70 };
+    char[] letterGrades = new char[10]; //مصفوفه النتيجه
+   
+    ///////////////////////////
+   
+   String[] names = {"Dalal","Maitha","Maha","Sara","Anwar","Areej","Baby pigoen","ahmed","Thanos","Thor"};
+    
+     
+      for (int i=0 ; i<10; i++)
+     { 
+      letterGrades[i] = grade(studentPercentage[i]); 
+      
+    System.out.println( "dear " +names[i]+" your grade is : "+letterGrades[i]);
+   System.out.println("");
+    
+     }
+     System.out.println("dont cry over spilled milk");
+	}
+	public static char grade(int a ){
+	
+        if (a>=90)
+	   return 'A';
+	    else if (a>80)
+	    return 'B';
+	    else if (a>70)
+	    return 'C';
+	    else if (a>60)
+	    return 'D';
+	    else 
+	    return 'F';
+	}
+}
+  
